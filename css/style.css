@@ -20934,7 +20934,7 @@ dl li {
 }
 
 .table-spaced th {
-  padding: 0px 20px 15px 20px;
+  padding: 0px 20px 3px 20px;
   font-family: "ubuntu-medium", sans-serif;
   font-weight: initial;
 }
@@ -20949,8 +20949,8 @@ dl li {
 }
 
 .table-spaced tbody td {
-  padding: 18px 20px;
-  color: #434a54;
+  padding: 23px 20px;
+  color: #979797;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
