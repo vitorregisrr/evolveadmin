@@ -231,6 +231,23 @@
                             </ul>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#dropdown-conta" aria-expanded="false"
+                            aria-controls="dropdown-conta">
+                            <span class="menu-title">Minha conta</span>
+                            <i class="menu-arrow"></i>
+                            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                        </a>
+                        <div class="collapse" id="dropdown-conta">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="../pages/conta.html">Minha conta</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="../pages/changepassword.html">Mudar
+                                        senha</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/logout">Sair</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="nav-item sidebar-actions">
                         <span class="nav-link">
                             <button class="btn btn-block btn-lg btn-gradient-primary mt-1">+ Add a project</button>
@@ -241,7 +258,7 @@
 
             <!-- partial -->
             <div class="main-panel">
-                <div class="content-wrapper">
+                <div class="content-wrapper wow fadeIn">
                     <div class="page-header mb-0">
                         <h3 class="page-title">
                             <span class="page-title-icon bg-gradient-primary text-white mr-2">
@@ -249,11 +266,6 @@
                             </span>
                             Gerenciar projetos
                         </h3>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Projetos</a></li>
-                            </ol>
-                        </nav>
                     </div>
                     <form action="">
                         <div class="row">
@@ -295,7 +307,7 @@
                                     </thead>
                                     <tbody>
 
-                                        <tr>
+                                        <tr class="wow fadeInUp">
                                             <td> <a href="/admin/solucao/edit/170">Soluçao vai vai</a></td>
                                             <td>Website</td>
                                             <td> <a href="">Não especificada ou excluída</a>

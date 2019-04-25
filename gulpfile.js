@@ -147,6 +147,7 @@ gulp.task('buildBaseVendorScripts', function() {
         './node_modules/popper.js/dist/umd/popper.min.js', 
         './node_modules/bootstrap/dist/js/bootstrap.min.js', 
         './node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js',
+        './node_modules/wowjs/dist/wow.min.js',
         './node_modules/quill/dist/quill.min.js'
     ])
       .pipe(concat('vendor.bundle.base.js'))
@@ -156,6 +157,7 @@ gulp.task('buildBaseVendorScripts', function() {
 /*Building vendor styles needed for basic template rendering*/
 gulp.task('buildBaseVendorStyles', function() {
     return gulp.src(['./node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
+                    './node_modules/animate.css/animate.min.css',
                     './node_modules/quill/dist/quill.snow.css',
                     './node_modules/quill/dist/quill.core.css',
                     './node_modules/quill/dist/quill.bubble.css'])

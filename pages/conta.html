@@ -19,7 +19,6 @@
 <body>
   <div class="container-scroller">
     <!-- partial:../partials/_navbar.html -->
-
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
         <a class="navbar-brand brand-logo" href="../index.html"><img src="../images/logo.png" alt="logo"/></a>
@@ -134,7 +133,6 @@
         </button>
       </div>
     </nav>
-
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:../partials/_sidebar.html -->
@@ -243,20 +241,14 @@
 
       <!-- partial -->
       <div class="main-panel">
-        <div class="content-wrapper">
+        <div class="content-wrapper wow fadeIn">
           <div class="page-header">
             <h3 class="page-title">
               <span class="page-title-icon bg-gradient-primary text-white mr-2">
-                <i class="mdi mdi-plus"></i>
+                <i class="mdi mdi-account"></i>
               </span>
-              Novo projeto
+              Minha conta
             </h3>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Projetos</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Novo projeto</li>
-              </ol>
-            </nav>
           </div>
           <div class="row">
             <div class="col-12 grid-margin stretch-card">
@@ -264,30 +256,45 @@
                 <div class="card-body">
                   <form class="forms-sample">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-4">
                         <div class="form-group has">
-                          <label for="exampleInputName1">Título</label>
-                          <input type="text" class="form-control has" id="inputTitulo" placeholder="Digite o título">
+                          <label for="exampleInputName1">Nome</label>
+                          <input readonly type="text" class="form-control has" id="inputTitulo"
+                            value="Vitor Régis de Ramos">
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="inputKeywords">Keywords</label>
-                          <input type="hidden" name="keywords" value='{"data":["oi", "tu"]}'>
-                          <div class="input-tags form-control" data-datastore="input[name='keywords']">
-                          </div>
+                      <div class="col-md-4">
+                        <div class="form-group has">
+                          <label for="exampleInputName1">Usuário</label>
+                          <input readonly type="text" class="form-control has" id="inputTitulo" value="vitorregisrr">
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <input type="hidden" name="conteudo">
+                      <div class="col-md-4">
+                        <div class="form-group has">
+                          <label for="exampleInputName1">Email</label>
+                          <input readonly type="text" class="form-control has" id="inputTitulo"
+                            value="vitorregisr@gmail.com">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
                         <div class="form-group">
-                          <div id="editor-rich" data-deltastore="input[name='conteudo']">
+                          <label>Avatar</label>
+                          <input type="file" name="img[]" class="file-upload-default">
+                          <div class="input-group col-xs-12">
+                            <input type="text" class="form-control file-upload-info" disabled
+                              placeholder="Selecionar imagem">
+                            <span class="input-group-append">
+                              <button class="file-upload-browse btn btn-gradient-primary"
+                                type="button">Selecionar</button>
+                            </span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-gradient-primary mr-2">Criar</button>
-                    <button class="btn btn-light">Cancelar</button>
+                    <div class="float-right">
+                
+                      <button type="submit" class="btn btn-gradient-primary mr-2">Editar</button>
+                    </div>
                   </form>
                 </div>
               </div>

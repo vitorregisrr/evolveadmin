@@ -83,4 +83,6 @@
       }
     })
   });
+
+  new WOW().init();
 })(jQuery);

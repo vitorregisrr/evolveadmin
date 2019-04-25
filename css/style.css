@@ -20614,6 +20614,14 @@ select.form-control.border-dark:focus {
   padding-left: 5px;
 }
 
+.img-preview {
+  display: block;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
 /* Icons */
 .icons-list {
   border-left: 1px solid #ebedf2;
